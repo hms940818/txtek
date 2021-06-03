@@ -16,13 +16,13 @@
 <c:choose>
 	<c:when test="${webDto.spFlg}">
 		<!-- 手机版 -->
-		<link rel="stylesheet" type="text/css" href="/myCompany/resource/sp/news/css/news.css">
-		<script type="text/javascript" src="/myCompany/resource/sp/news/js/news.js"></script>
+		<link rel="stylesheet" type="text/css" href="/txtek/resource/sp/news/css/news.css">
+		<script type="text/javascript" src="/txtek/resource/sp/news/js/news.js"></script>
 	</c:when>
 	<c:otherwise>
 		<!-- 电脑版 -->
-		<link rel="stylesheet" type="text/css" href="/myCompany/resource/news/css/news.css">
-		<script type="text/javascript" src="/myCompany/resource/news/js/news.js"></script>
+		<link rel="stylesheet" type="text/css" href="/txtek/resource/news/css/news.css">
+		<script type="text/javascript" src="/txtek/resource/news/js/news.js"></script>
 	</c:otherwise>
 </c:choose> 
 

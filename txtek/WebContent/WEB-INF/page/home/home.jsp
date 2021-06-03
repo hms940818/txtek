@@ -19,13 +19,13 @@
 <c:choose>
 	<c:when test="${webDto.spFlg}">
 		<!-- 手机版 -->
-		<link rel="stylesheet" type="text/css" href="/myCompany/resource/sp/home/css/home.css">
-		<script type="text/javascript" src="/myCompany/resource/sp/home/js/home.js"></script>
+		<link rel="stylesheet" type="text/css" href="/txtek/resource/sp/home/css/home.css">
+		<script type="text/javascript" src="/txtek/resource/sp/home/js/home.js"></script>
 	</c:when>
 	<c:otherwise>
 		<!-- 电脑版 -->
-		<link rel="stylesheet" type="text/css" href="/myCompany/resource/home/css/home.css">
-		<script type="text/javascript" src="/myCompany/resource/home/js/home.js"></script>
+		<link rel="stylesheet" type="text/css" href="/txtek/resource/home/css/home.css">
+		<script type="text/javascript" src="/txtek/resource/home/js/home.js"></script>
 	</c:otherwise>
 </c:choose> 
 </head>
@@ -39,10 +39,10 @@
 		<div class="home-title"><spring:message code="contact.title"/></div>
 <!-- 		<div id="mydiv" style="position: absolute; width: 1500px; height: 1000px; "> -->
 <!-- 			<div>内容（可以是表格、图片、文字......） -->
-<!-- 			<img class="logo" src="/myCompany/resource/common/img/logo.png"> -->
-<!-- 			<img class="logo" src="/myCompany/resource/common/img/game1.jpg"> -->
-<!-- 			<img class="logo" src="/myCompany/resource/common/img/view1.jpg"> -->
-<!-- 			<img class="logo" src="/myCompany/resource/common/img/logo.png"></div> -->
+<!-- 			<img class="logo" src="/txtek/resource/common/img/logo.png"> -->
+<!-- 			<img class="logo" src="/txtek/resource/common/img/game1.jpg"> -->
+<!-- 			<img class="logo" src="/txtek/resource/common/img/view1.jpg"> -->
+<!-- 			<img class="logo" src="/txtek/resource/common/img/logo.png"></div> -->
 <!-- 		</div> -->
 
 		<!--       <div class="regist-button"> -->

@@ -12,8 +12,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="/myCompany/resource/home/css/home.css">
-<script type="text/javascript" src="/myCompany/resource/home/js/home.js"></script>
+<link rel="stylesheet" type="text/css" href="/txtek/resource/home/css/home.css">
+<script type="text/javascript" src="/txtek/resource/home/js/home.js"></script>
 <title>Login</title>
 </head>
 	<body>

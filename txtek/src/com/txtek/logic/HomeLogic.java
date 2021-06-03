@@ -1,4 +1,4 @@
-package com.myCompany.logic;
+package com.txtek.logic;
 
 import java.io.IOException;
 import java.io.InputStream;

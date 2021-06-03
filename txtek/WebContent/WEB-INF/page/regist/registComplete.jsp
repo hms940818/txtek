@@ -12,8 +12,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="/myCompany/resource/regist/css/regist.css">
-<script type="text/javascript" src="/myCompany/resource/regist/js/regist.js"></script>
+<link rel="stylesheet" type="text/css" href="/txtek/resource/regist/css/regist.css">
+<script type="text/javascript" src="/txtek/resource/regist/js/regist.js"></script>
 <title>Regist</title>
 </head>
 	<body>

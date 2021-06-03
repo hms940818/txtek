@@ -1,7 +1,7 @@
-package com.myCompany.logic;
+package com.txtek.logic;
 
-import com.myCompany.model.ContactLoginInDto;
 import com.sun.mail.util.MailSSLSocketFactory;
+import com.txtek.model.ContactLoginInDto;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;

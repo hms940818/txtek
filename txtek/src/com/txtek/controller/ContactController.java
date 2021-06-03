@@ -1,4 +1,4 @@
-package com.myCompany.controller;
+package com.txtek.controller;
 
 import java.io.UnsupportedEncodingException;
 
@@ -6,9 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.myCompany.model.ContactServiceInDto;
-import com.myCompany.model.ContactWebdto;
-import com.myCompany.service.ContactService;
+import com.txtek.model.ContactServiceInDto;
+import com.txtek.model.ContactWebdto;
+import com.txtek.service.ContactService;
 
 
 @Controller

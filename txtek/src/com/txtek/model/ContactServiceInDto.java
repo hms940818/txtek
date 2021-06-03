@@ -1,12 +1,12 @@
-package com.myCompany.model;
+package com.txtek.model;
 
-public class ContactWebdto {
+public class ContactServiceInDto {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 802516060441676434L;
 
-	public ContactWebdto() {
+	public ContactServiceInDto() {
 		// TODO Auto-generated constructor stub
 	}
 	private String name;
@@ -14,7 +14,7 @@ public class ContactWebdto {
 	private String tel;
 	private String detailMessage;
 	
-	public ContactWebdto(String name, String email, String tel, String detailMessage) {
+	public ContactServiceInDto(String name, String email, String tel, String detailMessage) {
 		super();
 		this.name = name;
 		this.email = email;

@@ -1,4 +1,4 @@
-package com.myCompany.model;
+package com.txtek.model;
 
 import java.io.Serializable;
 

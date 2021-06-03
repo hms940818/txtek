@@ -1,12 +1,12 @@
-package com.myCompany.service;
+package com.txtek.service;
 
 import java.security.GeneralSecurityException;
 
 import javax.mail.MessagingException;
 
-import com.myCompany.logic.ContactLogic;
-import com.myCompany.model.ContactLoginInDto;
-import com.myCompany.model.ContactServiceInDto;
+import com.txtek.logic.ContactLogic;
+import com.txtek.model.ContactLoginInDto;
+import com.txtek.model.ContactServiceInDto;
 
 public class ContactService {
 	

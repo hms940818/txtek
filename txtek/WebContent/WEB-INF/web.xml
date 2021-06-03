@@ -9,7 +9,7 @@
     <param-value>classpath:resources/application/spring-mybatis.xml</param-value>
   </context-param>
   <servlet>
-    <servlet-name>MyCompany</servlet-name>
+    <servlet-name>txtek</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
@@ -18,7 +18,7 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>MyCompany</servlet-name>
+    <servlet-name>txtek</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
   <filter>
@@ -35,6 +35,6 @@
   </filter>
   <filter-mapping>
     <filter-name>encodingFilter</filter-name>
-    <servlet-name>MyCompany</servlet-name>
+    <servlet-name>txtek</servlet-name>
   </filter-mapping>
 </web-app>

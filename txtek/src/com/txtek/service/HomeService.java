@@ -1,10 +1,10 @@
-package com.myCompany.service;
+package com.txtek.service;
 
 import java.io.IOException;
 
-import com.myCompany.logic.HomeLogic;
-import com.myCompany.model.HomeWebDto;
 import com.mybatis.dao.model.User;
+import com.txtek.logic.HomeLogic;
+import com.txtek.model.HomeWebDto;
 
 public class HomeService {
 	

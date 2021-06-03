@@ -1,4 +1,4 @@
-package com.myCompany.controller;
+package com.txtek.controller;
 
 import java.io.IOException;
 
@@ -6,10 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.myCompany.model.RegistWebDto;
-import com.myCompany.service.HomeService;
-import com.myCompany.service.RegistService;
 import com.mybatis.dao.model.User;
+import com.txtek.model.RegistWebDto;
+import com.txtek.service.HomeService;
+import com.txtek.service.RegistService;
 
 
 @Controller

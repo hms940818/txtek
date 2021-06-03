@@ -14,9 +14,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css"
-	href="/myCompany/resource/contact/css/contact.css">
+	href="/txtek/resource/contact/css/contact.css">
 <script type="text/javascript"
-	src="/myCompany/resource/contact/js/contact.js"></script>
+	src="/txtek/resource/contact/js/contact.js"></script>
 <title><spring:message code="home.title" /></title>
 </head>
 <body>

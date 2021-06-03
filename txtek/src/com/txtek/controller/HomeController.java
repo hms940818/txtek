@@ -1,4 +1,4 @@
-package com.myCompany.controller;
+package com.txtek.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.commom.HttpRequestDeviceUtils;
-import com.myCompany.model.HomeWebDto;
+import com.txtek.model.HomeWebDto;
 
 
 @Controller
@@ -15,7 +15,7 @@ import com.myCompany.model.HomeWebDto;
 public class HomeController {
 
 	/**
-     * 初始化
+     * 初始�?
      * 
      * @return
      */
