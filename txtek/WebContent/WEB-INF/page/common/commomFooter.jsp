@@ -40,14 +40,7 @@
 			<a href="/txtek/contact/" title="<spring:message code="header.contact"/>" target="_self" class="">
 				<spring:message code="header.contact" />
 			</a>
-			<br>
-			<br>
-			上海衔月科技有限公司 版权所有
-			<br>
-			COPYRIGHT©2021-2021 SEREINGAMES.ALL RIGHTS RESERVED.
-			<br>
-			沪ICP备2021009112号-1<c:if test="${not webDto.spFlg}">|</c:if><c:if test="${webDto.spFlg}"><br/></c:if>全国文化市场统一举报电话：12318
-
+			版权所有 © 2020 苏州拓鑫钛克自动化科技有限公司       信息产业部备案许可证号：苏ICP备20002552号-1 技术支持：何茂森 
 		</div>
 	</div>
 </div>

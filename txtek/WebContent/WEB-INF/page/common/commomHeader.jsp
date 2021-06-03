@@ -14,41 +14,63 @@
 		<script type="text/javascript" src="/txtek/resource/common/js/common.js"></script>
 	</c:otherwise>
 </c:choose> 
-<header class="header">
-    <p class="homelogo">
-    	<img class="logo" src="/txtek/resource/common/img/logo.png">
-    </p>
 
-    <div class="header-div1" id="doc-topbar-collapse">
-        <div class=" " >
-            <ul class="header-ul">
-            	<!-- 首页 -->
-                <li class="header-li <c:if test="${webDto.currentTab eq 'top'}">current-page</c:if>" onmouseover="addLiBg(this);" onmouseleave="removeLiBg(this);">
-                    <a href="/txtek/home/" title="<spring:message code="header.top"/>" target="_self" class="<c:if test="${webDto.currentTab eq 'top'}">current-page</c:if>"><spring:message code="header.top"/></a>
-                </li>
-                
-                <!-- 关于我们 -->
-                <li class="header-li <c:if test="${webDto.currentTab eq 'aboutus'}">current-page</c:if>" onmouseover="addLiBg(this);" onmouseleave="removeLiBg(this);">
-                    <a href="/txtek/aboutus/" title="<spring:message code="header.aboutUs"/>" target="_self" class="<c:if test="${webDto.currentTab eq 'aboutus'}">current-page</c:if>"><spring:message code="header.aboutUs"/></a>
-                </li>
-                
-                <!-- 产品 -->
-                <li class="header-li <c:if test="${webDto.currentTab eq 'product'}">current-page</c:if>" onmouseover="addLiBg(this);" onmouseleave="removeLiBg(this);">
-                    <a href="/txtek/product/" title="<spring:message code="header.product"/>" target="_self" class="<c:if test="${webDto.currentTab eq 'product'}">current-page</c:if>"><spring:message code="header.product"/></a>
-                </li>
-                
-                <!-- 新闻 -->
-                <li class="header-li <c:if test="${webDto.currentTab eq 'news'}">current-page</c:if>" onmouseover="addLiBg(this);" onmouseleave="removeLiBg(this);">
-                    <a href="/txtek/news/"title="<spring:message code="header.news"/>" target="_self" class="<c:if test="${webDto.currentTab eq 'news'}">current-page</c:if>"><spring:message code="header.news"/></a>
-                </li>
-                
-                <!-- 联系我们 -->
-                <li class="header-li <c:if test="${webDto.currentTab eq 'contact'}">current-page</c:if>" onmouseover="addLiBg(this);" onmouseleave="removeLiBg(this);">
-                    <a href="/txtek/contact/"title="<spring:message code="header.contact"/>" target="_self" class="<c:if test="${webDto.currentTab eq 'contact'}">current-page</c:if>"><spring:message code="header.contact"/></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</header>
+	<div class="nav">
+		<ul class="menua">
+			<!-- 首页 -->
+			<li class="stmenu"><a href="/txtek/home/" class="xialaguang" rel="nofollow"><spring:message code="header.top" /></a></li>
+			<!-- 关于我们 -->
+			<li class="stmenu"><a href="about.asp?ID=70" class="xialaguang" rel="nofollow"><spring:message code="header.aboutUs" /></a>
+				<ul class="children" style="display: none;">
+					<!-- 公司介绍 -->
+					<li><a href="about.asp?ID=70"><spring:message code="header.aboutUs" /></a></li>
+					<!-- 企业理念 -->
+					<li><a href="about.asp?ID=113"><spring:message code="header.aboutUs" /></a></li>
+				</ul>
+			</li>
+			<li class="stmenu"><a href="pro.asp" class="xialaguang"
+				rel="nofollow">产品展示</a>
+				<ul class="children" style="display: none;">
+
+					<li><a href="pro.asp?ColID=41">SMT检测设备</a></li>
+
+
+					<li><a href="pro.asp?ColID=42">SMT生产类设备</a></li>
+
+
+					<li><a href="pro.asp?ColID=43">SMT治具类</a></li>
+
+
+					<li><a href="pro.asp?ColID=44">自动化设备</a></li>
+
+
+					<li><a href="pro.asp?ColID=45">半导体设备</a></li>
+
+
+					<li><a href="pro.asp?ColID=46">SMT辅助服务</a></li>
+
+
+					<li><a href="pro.asp?ColID=48">自动锁螺丝机</a></li>
+
+
+					<li><a href="pro.asp?ColID=49">分板机</a></li>
+
+
+
+				</ul></li>
+			<li class="stmenu"><a href="customer.asp" class="xialaguang"
+				rel="nofollow">合作伙伴</a></li>
+			<li class="stmenu"><a href="news.asp" class="xialaguang"
+				rel="nofollow">新闻资讯</a></li>
+			<li class="stmenu"><a href="feedback.asp" class="xialaguang"
+				rel="nofollow">在线留言</a></li>
+			<li class="stmenu"><a
+				href="http://newinformation.china-suqitong.com/newInfo.asp"
+				target="_blank" class="xialaguang" rel="nofollow">新信息</a></li>
+			<li class="stmenu"><a href="contact.asp" class="xialaguang"
+				rel="nofollow">联系我们</a></li>
+		</ul>
+	</div>
+
 
 
