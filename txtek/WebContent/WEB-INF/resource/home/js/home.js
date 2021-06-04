@@ -9,7 +9,7 @@ function pageSubmit(url){
 	pform.submit();
 }
 $(document).ready(function(){
-	new WOW().init();
+	//new WOW().init();
 	$(window).scroll(function() {
 		if (($("#mainNav").length > 0)) {
 			if(($(this).scrollTop() > 0)) {
