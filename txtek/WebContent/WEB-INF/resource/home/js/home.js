@@ -1,41 +1,57 @@
 /**
- * 
+ * 作者：何茂森
+ * @param url
+ * @returns
  */
 
-function toLogin(){
-	var form = document.forms[0];
-	form.action="/txtek/login"
-	form.submit();
+function pageSubmit(url){
+	pform.action = url;
+	pform.submit();
 }
-function toRegist(){
-	var form = document.forms[0];
-	form.action="/txtek/regist"
-	form.submit();
+$(document).ready(function(){
+	new WOW().init();
+	$(window).scroll(function() {
+		if (($("#mainNav").length > 0)) {
+			if(($(this).scrollTop() > 0)) {
+				$("#mainNav").addClass("navbar-fixed-top animated fadeInDown navover");
+				$(".head-top").css("display","none");
+			} else {	
+				$("#mainNav").removeClass("navbar-fixed-top animated fadeInDown navover");
+				$(".head-top").css("display","block");
+			}
+		};
+	});
+	
+	$(window).load(function() {
+		if (($("#mainNav").length > 0)) { 
+			if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
+				$("#mainNav").addClass("navbar-fixed-top animated fadeInDown");
+			}
+		};
+	});
+	
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+	
+	
+});
+
+function alert(message){
+	layer.alert(message,{shade:.5,title:false,closeBtn:0,skin:'yuan1'});
+}
+function alertUrl(msg,url){
+	layer.alert(msg, {shade:.5,title:false,closeBtn:0,skin:'yuan1',btn:['确定']}, function(){
+		location.href=url;
+  });
+}
+function openWin(msg){
+	layer.open({
+	  type: 1,
+	  title: false,
+	  closeBtn: 0,
+	  shadeClose: false,
+	  content: msg
+	});
 }
 
-function addLiBg(li){
-	li.style.background="red";//背景色
-	li.children[0].style.color="white";//文字色
-}
-function removeLiBg(li){
-	li.style.background="";	
-	li.children[0].style.color="black";//文字色
-}
-
-function start_marquee(div, spd, step) {
-	obj_marquee = document.getElementById(div);
-	marquee_high = parseInt(obj_marquee.style.height);
-	marquee_step = marquee_high / step;
-	obj_marquee.appendChild(obj_marquee.firstChild.cloneNode(true));
-	setInterval("step_c=1;setTimeout('marquee_show(" + step + ")',0)",
-			spd * 1000);
-}
-function marquee_show(step) {
-	obj_marquee.scrollTop += marquee_step;
-	if (obj_marquee.scrollTop >= obj_marquee.children[0].offsetTop) {
-		obj_marquee.scrollTop = 0;
-	}
-	if (step_c++ < step)
-		setTimeout("marquee_show(" + step + ")", 0);
-	return;
-}
