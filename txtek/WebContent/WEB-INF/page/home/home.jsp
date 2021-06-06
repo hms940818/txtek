@@ -15,7 +15,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title><spring:message code="home.title" /></title>
+<title><spring:message code="header.title" /></title>
 <c:choose>
 	<c:when test="${webDto.spFlg}">
 		<!-- 手机版 -->
@@ -43,22 +43,7 @@
    <a href="?lang=zh_CN"><spring:message code="language.cn"/></a> &nbsp;&nbsp;&nbsp;
    <a href="?lang=en_EN"><spring:message code="language.en"/></a>
 
-<!-- logo  START-->
-<div class="headerv">
-	<div class="head">
-		<div class="logo" style="background: url(/txtek/resource/common/img/logo.png) no-repeat; cursor: pointer;" onclick="window.location.href='index.asp'"></div>
-		<div class="head_r">
-			<div class="search d7">
-				<form method="get" action="search.asp" class="form1">
-					<!-- 搜索从这里开始... -->
-					<input type="text" placeholder="<spring:message code="home.searchPlaceholder" />" name="keyword">
-					<button type="submit"></button>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- logo START -->
+
 <%@ include file="../common/commomHeader.jsp"%>
 
 <!-- 滚动显示图片 START -->
