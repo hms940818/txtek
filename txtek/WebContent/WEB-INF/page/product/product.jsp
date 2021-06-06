@@ -48,11 +48,11 @@
 <%@ include file="../common/commomHeader.jsp"%>
 
 <!-- 大图片显示区域 START -->
-<div class="ny_banner" style="background:url(/txtek/resource/product/img/hengfu.jpg) no-repeat center;width: 100%; height: 250px;overflow: hidden;">
+<div class="ny_banner" style="background:url(/txtek/resource/common/img/hengfu.jpg) no-repeat center;width: 100%; height: 250px;overflow: hidden;">
 	<div class="container">
 		<!-- 页面大标题 -->
 		<h1>
-			<spring:message code="${webdto.subTitle }" />
+			<spring:message code="${webDto.subTitle}" />
 	     </h1>
 	</div>
 </div>

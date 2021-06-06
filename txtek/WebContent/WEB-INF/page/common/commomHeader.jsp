@@ -5,8 +5,10 @@
 <c:choose>
 	<c:when test="${webDto.spFlg}">
 		<!-- 手机版 -->
-		<link rel="stylesheet" type="text/css" href="/txtek/resource/sp/common/css/common.css">
-		<script type="text/javascript" src="/txtek/resource/sp/common/js/common.js"></script>
+<!-- 		<link rel="stylesheet" type="text/css" href="/txtek/resource/sp/common/css/common.css"> -->
+<!-- 		<script type="text/javascript" src="/txtek/resource/sp/common/js/common.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="/txtek/resource/common/css/common.css">
+		<script type="text/javascript" src="/txtek/resource/common/js/common.js"></script>
 	</c:when>
 	<c:otherwise>
 		<!-- 电脑版 -->

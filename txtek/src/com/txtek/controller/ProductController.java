@@ -9,7 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.commom.HttpRequestDeviceUtils;
 import com.txtek.model.HomeWebDto;
+import com.txtek.model.ProductServiceInDto;
+import com.txtek.model.ProductServiceOutDto;
 import com.txtek.model.ProductWebDto;
+import com.txtek.service.ProductService;
 
 
 @Controller
@@ -29,6 +32,12 @@ public class ProductController {
 
         String para = request.getParameter("para");
         
+        ProductService productService = new ProductService();
+        ProductServiceInDto serviceInDto = new ProductServiceInDto();
+        ProductServiceOutDto serviceOutDto = new ProductServiceOutDto();
+        
+        serviceOutDto = productService.init(serviceInDto);
+        webDto.setProductTitleMap(serviceOutDto.getProductTitleMap());
         
         if (StringUtils.isEmpty(para)) {
             webDto.setCurrentTab("product_all");

@@ -1,6 +1,8 @@
 package com.txtek.model;
 
 import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
 
 public class ProductWebDto implements Serializable {
 	/**
@@ -14,12 +16,14 @@ public class ProductWebDto implements Serializable {
 
     private String currentTab;// 当前页面
     private String subTitle;// 页面内子标题
+    private Map<String, String> productTitleMap;//子标题目录list
     private boolean spFlg;// 电脑・手机区分
 	
-    public ProductWebDto(String currentTab, String subTitle, boolean spFlg) {
+    public ProductWebDto(String currentTab, String subTitle, Map<String,String> productTitleMap, boolean spFlg) {
 		super();
 		this.currentTab = currentTab;
         this.subTitle = subTitle;
+        this.setProductTitleMap(productTitleMap);
         this.spFlg = spFlg;
 	}
 
@@ -72,5 +76,20 @@ public class ProductWebDto implements Serializable {
 	public void setSubTitle(String subTitle) {
 		this.subTitle = subTitle;
 	}
+
+	/**
+	 * @return the productTitleMap
+	 */
+	public Map<String, String> getProductTitleMap() {
+		return productTitleMap;
+	}
+
+	/**
+	 * @param productTitleMap the productTitleMap to set
+	 */
+	public void setProductTitleMap(Map<String, String> productTitleMap) {
+		this.productTitleMap = productTitleMap;
+	}
+
 	
 }

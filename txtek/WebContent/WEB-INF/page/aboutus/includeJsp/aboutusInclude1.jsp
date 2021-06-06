@@ -13,17 +13,11 @@
 		<div class="list">
 			<ul class="yiji">
 				<li class="lb1">
-<%-- 				<c:if test="${webDto.currentTab eq 'profile'}"> --%>
-<%-- 					<c:set var="curTabClass" value="cur"></c:set> --%>
-<%-- 				</c:if> --%>
 				<a href="/txtek/aboutus/?para=profile" class="dir1 <c:if test="${webDto.currentTab eq 'profile'}">cur</c:if>">
 					<spring:message code="header.aboutUs.subtitle1" />
 				</a>
 				</li>
 				<li class="lb1">
-					<c:if test="${webDto.currentTab eq 'philosophy'}">
-						<c:set var="curTabClass" value="cur"></c:set>
-					</c:if>
 					<a href="/txtek/aboutus/?para=philosophy" class="dir1 <c:if test="${webDto.currentTab eq 'philosophy'}">cur</c:if>">
 						<spring:message code="header.aboutUs.subtitle2" />
 					</a>
@@ -33,9 +27,9 @@
 		<!-- 全国统一热点电话 -->
 		<div class="cent">
 			<p>
-				<spring:message code="aboutus.landline.title" />
+				<spring:message code="landline.title" />
 			</p>
-			<b><spring:message code="aboutus.landline.lineNo" /></b>
+			<b><spring:message code="landline.lineNo" /></b>
 		</div>
 	</div>
 	<div class="right">
