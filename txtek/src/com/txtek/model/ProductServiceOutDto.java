@@ -1,5 +1,6 @@
 package com.txtek.model;
 
+import java.util.List;
 import java.util.Map;
 
 public class ProductServiceOutDto {
@@ -11,12 +12,14 @@ public class ProductServiceOutDto {
 
 	public ProductServiceOutDto() {
 	}
-	private Map<String, String> productTitleMap;
+	private Map<String, String> productTitleMap;//子标题目录Map
+	private List<ProductDetailDto> detailDtoList ; //产品明细dto list
 	
 	
-	public ProductServiceOutDto(Map<String, String> productTitleMap) {
+	public ProductServiceOutDto(Map<String, String> productTitleMap, List<ProductDetailDto> detailDtoList) {
 		super();
 		this.setProductTitleMap(productTitleMap);
+		this.setDetailDtoList(detailDtoList);
 	}
 
 	public static long getSerialversionuid() {
@@ -35,6 +38,20 @@ public class ProductServiceOutDto {
 	 */
 	public void setProductTitleMap(Map<String, String> productTitleMap) {
 		this.productTitleMap = productTitleMap;
+	}
+
+	/**
+	 * @return the detailDtoList
+	 */
+	public List<ProductDetailDto> getDetailDtoList() {
+		return detailDtoList;
+	}
+
+	/**
+	 * @param detailDtoList the detailDtoList to set
+	 */
+	public void setDetailDtoList(List<ProductDetailDto> detailDtoList) {
+		this.detailDtoList = detailDtoList;
 	}
 
 	

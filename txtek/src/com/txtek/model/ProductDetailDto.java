@@ -1,24 +1,26 @@
 package com.txtek.model;
 
-public class ProductServiceInDto {
+public class ProductDetailDto {
 	
 	/**
-	 * 产品明细dto
+	 * 
 	 */
 	private static final long serialVersionUID = 802516060441676434L;
 
-	public ProductServiceInDto() {
-	}
-	private String title;
-	private String imgName;
+	public ProductDetailDto() {
+	}	
 	
-	public ProductServiceInDto(String title, String imgName) {
+	private String title;//标题
+	private String imgName;//图片名称
+	private String category;//所属目录
+	
+	public ProductDetailDto(String title, String imgName, String category) {
 		super();
 		this.title = title;
 		this.imgName = imgName;
+		this.category = category;
 	}
 
-	
 
 	/**
 	 * @return the title
@@ -55,9 +57,24 @@ public class ProductServiceInDto {
 	}
 
 
-
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+
+	/**
+	 * @return the category
+	 */
+	public String getCategory() {
+		return category;
+	}
+
+
+	/**
+	 * @param category the category to set
+	 */
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	
 	

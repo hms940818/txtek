@@ -36,7 +36,7 @@
 		<div class="right_top">
 		<!-- 当前位置 -->
 			<strong><spring:message code="header.aboutUs.subtitle1" /></strong> 
-			<span><spring:message code="aboutus.currentPosition" />
+			<span><spring:message code="header.subtitle.currentPosition" />
 			<a href="/txtek/home/" rel="nofollow">
 			<spring:message code="header.top" /></a> &gt; <a href="" rel="nofollow"><spring:message code="header.aboutUs.subtitle1" /></a>
 			</span>
