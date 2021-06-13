@@ -1,7 +1,9 @@
 eclipse.preferences.version=1
 encoding//WebContent/WEB-INF/page/home/home.jsp=UTF-8
 encoding//WebContent/WEB-INF/page/home/includeJsp/homeInclude1.jsp=UTF-8
+encoding//src/com/txtek/controller/CustomerController.java=UTF-8
 encoding//src/com/txtek/controller/HomeController.java=UTF-8
 encoding//src/com/txtek/controller/ProductController.java=UTF-8
+encoding//src/com/txtek/model/CustomerWebDto.java=UTF-8
 encoding//src/com/txtek/model/HomeWebDto.java=UTF-8
 encoding//src/com/txtek/model/ProductWebDto.java=UTF-8

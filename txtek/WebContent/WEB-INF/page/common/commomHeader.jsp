@@ -67,15 +67,15 @@
 			</ul>
 		</li>
 		<!-- 合作伙伴 -->
-		<li class="stmenu"><a href="customer.asp" class="xialaguang" rel="nofollow"><spring:message code="header.customer" /></a></li>
+		<li class="stmenu"><a href="/txtek/customer/" class="xialaguang" rel="nofollow"><spring:message code="header.customer" /></a></li>
 		<!-- 新闻资讯 -->
-		<li class="stmenu"><a href="news.asp" class="xialaguang" rel="nofollow"><spring:message code="header.news" /></a></li>
+		<li class="stmenu"><a href="/txtek/news/" class="xialaguang" rel="nofollow"><spring:message code="header.news" /></a></li>
 		<!-- 在线留言 -->
-		<li class="stmenu"><a href="feedback.asp" class="xialaguang" rel="nofollow"><spring:message code="header.feedback" /></a></li>
+		<li class="stmenu"><a href="/txtek/feedback/" class="xialaguang" rel="nofollow"><spring:message code="header.feedback" /></a></li>
 		<!-- 新信息 -->
-		<li class="stmenu"><a href="newInfo.asp" target="_blank" class="xialaguang" rel="nofollow"><spring:message code="header.newInfo" /></a></li>
+		<li class="stmenu"><a href="/txtek/newInfo/" target="_blank" class="xialaguang" rel="nofollow"><spring:message code="header.newInfo" /></a></li>
 		<!-- 联系我们 -->
-		<li class="stmenu"><a href="contact.asp" class="xialaguang" rel="nofollow"><spring:message code="header.contact" /></a></li>
+		<li class="stmenu"><a href="/txtek/contact/" class="xialaguang" rel="nofollow"><spring:message code="header.contact" /></a></li>
 	</ul>
 </div>
 

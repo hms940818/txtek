@@ -46,8 +46,6 @@ public class ProductService {
 		outDto.setProductTitleMap(productTitleMap);
 		
 		//detail List
-		
-		//title Map
 		List<ProductDetailDto> productDetailListValue= new ArrayList<ProductDetailDto>();
 		Properties properties = new Properties();
 		InputStream input = null;
