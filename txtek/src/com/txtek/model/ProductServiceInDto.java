@@ -9,55 +9,35 @@ public class ProductServiceInDto {
 
 	public ProductServiceInDto() {
 	}
-	private String title;
-	private String imgName;
+	private String para;
 	
-	public ProductServiceInDto(String title, String imgName) {
+	public ProductServiceInDto(String para) {
 		super();
-		this.title = title;
-		this.imgName = imgName;
+		this.setPara(para);
 	}
 
 	
-
-	/**
-	 * @return the title
-	 */
-	public String getTitle() {
-		return title;
-	}
-
-
-
-	/**
-	 * @param title the title to set
-	 */
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-
-
-	/**
-	 * @return the imgName
-	 */
-	public String getImgName() {
-		return imgName;
-	}
-
-
-
-	/**
-	 * @param imgName the imgName to set
-	 */
-	public void setImgName(String imgName) {
-		this.imgName = imgName;
-	}
-
-
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+
+
+	/**
+	 * @return the para
+	 */
+	public String getPara() {
+		return para;
+	}
+
+
+
+	/**
+	 * @param para the para to set
+	 */
+	public void setPara(String para) {
+		this.para = para;
 	}
 	
 	

@@ -34,10 +34,13 @@ public class ProductController {
         
         ProductService productService = new ProductService();
         ProductServiceInDto serviceInDto = new ProductServiceInDto();
+        
+        serviceInDto.setPara(para);
         ProductServiceOutDto serviceOutDto = new ProductServiceOutDto();
         
         serviceOutDto = productService.init(serviceInDto);
         webDto.setProductTitleMap(serviceOutDto.getProductTitleMap());
+        webDto.setDetailDtoList(serviceOutDto.getDetailDtoList());
         
         if (StringUtils.isEmpty(para)) {
             webDto.setCurrentTab("product_all");

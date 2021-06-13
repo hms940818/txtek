@@ -26,6 +26,7 @@ public class ProductService {
 	 */
 	public ProductServiceOutDto init(ProductServiceInDto indto) {
 		
+		String para = indto.getPara();
 		//title Map
 		List<String> productTitleMapValue= new ArrayList<String>();
 		productTitleMapValue.add("product_smt_testing");
@@ -65,12 +66,24 @@ public class ProductService {
 			
 			
 			for (int i = 1; i< propertiesCount / 3 + 1; i++) {
-				ProductDetailDto productDetailDto = new ProductDetailDto();
-				productDetailDto.setTitle(avoidNull(properties.getProperty("title"+i)));
-				productDetailDto.setImgName(avoidNull(properties.getProperty("imgName"+i)));
-				productDetailDto.setCategory(avoidNull(properties.getProperty("category"+i)));
-				
-				productDetailListValue.add(productDetailDto);
+				if (para == null || para.equals("") || para.equals("product_all")) {
+					//全部显示
+					ProductDetailDto productDetailDto = new ProductDetailDto();
+					productDetailDto.setTitle("product.detail.title" + i);
+					productDetailDto.setImgName(avoidNull(properties.getProperty("imgName"+i)));
+					productDetailDto.setCategory(avoidNull(properties.getProperty("category"+i)));
+					
+					productDetailListValue.add(productDetailDto);
+				}else if (para.equals(avoidNull(properties.getProperty("category"+i)))) {
+					//根据对应的产品分类显示
+					ProductDetailDto productDetailDto = new ProductDetailDto();
+					productDetailDto.setTitle("product.detail.title" + i);
+					productDetailDto.setImgName(avoidNull(properties.getProperty("imgName"+i)));
+					productDetailDto.setCategory(avoidNull(properties.getProperty("category"+i)));
+					
+					productDetailListValue.add(productDetailDto);
+					
+				}
 			}
 		} catch (IOException io) {
 		} finally {
