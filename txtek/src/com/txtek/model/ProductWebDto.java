@@ -14,19 +14,22 @@ public class ProductWebDto implements Serializable {
 
 	}
 
+    private boolean spFlg;// 电脑・手机区分
     private String currentTab;// 当前页面
     private String subTitle;// 页面内子标题
     private Map<String, String> productTitleMap;//子标题目录Map
-    private boolean spFlg;// 电脑・手机区分
     private List<ProductDetailDto> detailDtoList ; //产品明细dto list
+    private String id;// ID(明细页面用)
 	
-    public ProductWebDto(String currentTab, String subTitle, Map<String,String> productTitleMap, boolean spFlg, List<ProductDetailDto> detailDtoList) {
+    public ProductWebDto(String currentTab, String subTitle, Map<String,String> productTitleMap, 
+    		boolean spFlg, List<ProductDetailDto> detailDtoList, String id) {
 		super();
 		this.currentTab = currentTab;
         this.subTitle = subTitle;
         this.setProductTitleMap(productTitleMap);
         this.spFlg = spFlg;
         this.detailDtoList = detailDtoList;
+        this.id = id;
 	}
 
 	/**
@@ -105,6 +108,20 @@ public class ProductWebDto implements Serializable {
 	 */
 	public void setDetailDtoList(List<ProductDetailDto> detailDtoList) {
 		this.detailDtoList = detailDtoList;
+	}
+
+	/**
+	 * @return the id
+	 */
+	public String getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	

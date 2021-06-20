@@ -78,5 +78,30 @@ public class ProductController {
 
         return view;
     }
+    
+
+    /**
+     * 产品详细
+     * 
+     * @return
+     */
+    @RequestMapping("/product-view")
+    public ModelAndView toProductView(HttpServletRequest request) {
+        ModelAndView view = new ModelAndView();
+        ProductWebDto webDto = new ProductWebDto();
+
+        String id = request.getParameter("ID");
+        
+//        ProductService productService = new ProductService();
+//        ProductServiceInDto serviceInDto = new ProductServiceInDto();
+        
+        webDto.setId(id);
+        webDto.setSpFlg(HttpRequestDeviceUtils.isMobileDevice(request));// 电脑手机区分
+
+        view.addObject("webDto", webDto);
+        view.setViewName("product/product-view");
+
+        return view;
+    }
 
 }
